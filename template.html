@@ -5,6 +5,7 @@ Authors: Eric Bidelman <ebidel@gmail.com>
          Luke Mahé <lukem@google.com>
 
 URL: https://code.google.com/p/io-2012-slides
+한글 번역 : 김태호 <jyte82@gmail.com>
 -->
 <!DOCTYPE html>
 <html>
@@ -26,6 +27,7 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slides class="layout-widescreen">
 
+  <!-- <slide> 태그로 슬라이드를 정의합니다. -->
   <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
       <span><img src="images/google_developers_logo.png"></span>
@@ -44,69 +46,69 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>목록</h2>
     </hgroup>
     <article>
       <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
+        <li>제목 크기는 45이며, 폰트로 맑은 고딕과 나눔고딕을 사용합니다.</li>
+        <li>제목 목차
           <ul>
-            <li>Subtitle capitalization is title case</li>
+            <li>상세 목차</li>
           </ul>
         </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
+        <li>제목 목차</li>
+        <li>제목 목차에는 마침표를 넣지 마세요</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>애니메이션이 적용된 목록</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
+      <p>애니메이션 효과가 적용된 항목:</p>
       <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
+        <li>'h' 를 누르면 코드 중 중요 부분을 강조합니다.</li>
+        <li>'p' 를 누르면 발표자 노트를 표시합니다. (슬라이드에 노트가 있는 경우에만)</li>
+        <li>'f' 를 누르면 전체화면 모드로 전환합니다.</li>
+        <li>'w' 를 누르면 와이드스크린 모드로 전환합니다.</li>
+        <li>'o' 를 누르면 전체 슬라이드 보기 모드로 전환합니다.</li>
+        <li>'ESC' 를 누르면 위의 기능을 취소합니다.</li>
       </ul>
-      <p>Another list, but items fade as they build:</p>
+      <p>항목이 표시되면 기존 항목이 페이드되는 리스트</p>
       <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+        <li>마우스를 위에 올려보세요</li>
+        <li>마우스를 위에 올려보세요</li>
+        <li>마우스를 위에 올려보세요</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+      <h2>작은 글씨로 구성된 슬라이드</h2>
     </hgroup>
     <article class="smaller">
       <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
+        <li>모든 <a href="http://google.com">링크</a> 는 새로운 탭에서 열립니다.</li>
+        <li>이를 변경하려면, 링크에 <code>target="_self"</code> 속성을 추가하세요.</li>
       </ul>
     </article>
   </slide>
 
   <slide hidden>
-    Hidden slides are left out of the presentation.
+    숨겨진 슬라이드는 화면에 표시되지 않습니다.
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>소스코드가 있는 슬라이드 (부제목 포함)</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
     <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
+      <p>'h' 를 눌러 코드의 주요 부분을 강조합니다. (<code>&lt;b&gt;</code>로 둘러싸인 부분).</p>
       <pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
   // Say hello world until the user starts questioning
@@ -123,7 +125,7 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
+      <h2>소스코드가 있는 슬라이드 (작은 폰트)</h2>
     </hgroup>
     <article class="smaller">
       <pre class="prettyprint" data-lang="javascript">
@@ -159,19 +161,19 @@ function helloWorld(world) {
     <aside class="note">
       <section>
         <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
+          <li>안드로이드에 흥미를 느꼈다</li>
+          <li>색다른 프리젠테이션을 만들어보고 싶었음</li>
+          <li>HTML로 프리젠테이션 하는 것에 흥미를 느낌</li>
+          <li><a href="#">링크</a> 도 넣을 수 있습니다.</li>
         </ul>
-        <p><b>Remember to say this tag line!</b></p>
+        <p><b>강조할 문구도 넣을 수 있습니!</b></p>
       </section>
     </aside>
     <hgroup>
-      <h2>Slide with Speaker Notes</h2>
+      <h2>발표자 노트가 있는 슬라이드</h2>
     </hgroup>
     <article>
-      <p>Press 'p' to toggle speaker notes.</p>
+      <p>'p' 를 눌러 발표자 노트를 표시합니다.</p>
     </article>
   </slide>
 
@@ -179,66 +181,65 @@ function helloWorld(world) {
     <aside class="note">
       <section>
         <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
+          <li>이 링크 좀 대박인듯!: <a href="http://www.google.com">링크</a></li>
         </ul>
-        <p><b>Remember to say this tag line!</b></p>
+        <p><b>마지막에 이 말 하는 것 잊지 말기!</b></p>
       </section>
     </aside>
     <hgroup>
-      <h2>Presenter Mode</h2>
+      <h2>발표자 모드</h2>
     </hgroup>
     <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
+      <p>URL 뒤에 <code><a href="?presentme=true" target="_self">?presentme=true</a></code> 를 붙이면 발표자 모드를 활성화 할 수 있습니다.
+      이 설정은 페이지를 새로고침해도 계속 유지됩니다.</p>
+      <p><code><a href="?presentme=false" target="_self">?presentme=false</a></code> 를 다시 누르면 발표자 모드가 비활성화 됩니다.</p>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Image</h2>
+      <h2>그림이 있는 슬라이드</h2>
     </hgroup>
     <article>
       <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <footer class="source">출처 : 출처 정보를 여기에 입력하세요.</footer>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>그림이 있는 슬라이드 (가운데 정렬)</h2>
     </hgroup>
     <article class="flexbox vcenter">
       <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+      <footer class="source">출처 : 출처 정보를 여기에 입력하세요.</footer>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>표 (유형 1)</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
     <article>
       <table>
         <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
+          <th></th><th>1열</th><th>2열</th><th>3열</th><th>4열</th>
         </tr>
         <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>1행</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>2행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>3행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>4행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>5행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
       </table>
     </article>
@@ -246,28 +247,28 @@ function helloWorld(world) {
 
   <slide>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>표 (유형 1, 작은 폰트)</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
     <article class="smaller">
       <table>
         <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
+          <th></th><th>1열</th><th>2열</th><th>3열</th><th>4열</th>
         </tr>
         <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>1행</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>2행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>3행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>4행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <td>5행</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
       </table>
     </article>
@@ -275,25 +276,25 @@ function helloWorld(world) {
 
   <slide>
     <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>표 (유형 2)</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
     <article>
       <table class="rows">
         <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
+          <th>헤더 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <th>헤더 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <th>헤더 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <th>헤더 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
         <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
+          <th>헤더 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
         </tr>
       </table>
     </article>
@@ -301,7 +302,7 @@ function helloWorld(world) {
 
   <slide>
     <hgroup>
-      <h2>Slide Styles</h2>
+      <h2>슬라이드 스타일</h2>
     </hgroup>
     <article class="smaller">
       <div class="columns-2">
@@ -327,7 +328,7 @@ function helloWorld(world) {
         </ul>
       </div>
       <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
+        이것은 <button>버튼</button> 과 <button disabled>비활성</button> 버튼으로 이루어진 문장입니다.
       </div>
     </article>
   </slide>
@@ -335,14 +336,14 @@ function helloWorld(world) {
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>계속되는 슬라이드</h2>
+      <h3>부제목 위치</h3>
     </hgroup>
   </slide>
 
   <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
     <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
+      <h2 class="white">전체크기 그림 (제목도 표시 가능합니다)</h2>
     </hgroup>
     <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
   </slide>
@@ -351,35 +352,35 @@ function helloWorld(world) {
     <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <q>
-        This is an example of quote text.
+        인용구 예제입니다.
       </q>
       <div class="author">
-        Name<br>
-        Company
+        이름<br>
+        회사
       </div>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+      <h2>Iframe을 포함하는 슬라이드</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
+      <iframe data-src="http://kunny.github.io/remoteroid/contacts.html"></iframe>
     </article>
   </slide>
 
   <slide>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
+      <iframe data-src="http://kunny.github.io/remoteroid/contacts.html"></iframe>
     </article>
   </slide>
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+      <h2>&lt;감사합니다!&gt;</h2>
+      <p>연락처 정보는 여기에 표시됩니다.</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
